@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatika Nap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Magyar Informatika Napja</h1>
+    <main class="keret">
+        <article>
+            <h2>Története</h2>
+            <p>Az M–3 terveit a Szovjetunió Tudományos Akadémiájának Energetikai Kutatóintézetében dolgozták ki, 1956-58 között. A cél egy, az abban az időben a működő katonai célokra szolgáló nagy számítógépeknél – BESZM, Sztrela –, olcsóbb és kisebb, polgári felhasználásra alkalmas számítógép létrehozása volt.. A Moszkvában elkészített tervek alapján több helyen épültek M–3-as számítógépek: az örményországi Jerevánban ez a gép volt a Razdan sorozat alaptípusa, a fehéroroszországi Minszkben ezeknek a terveknek az alapján készültek a Minszk sorozat első gépei, Kínában 1957-ben szintén ezeknek a terveknek segítségével épült az első kínai számítógép. És ezeknek a terveknek az alapján (ma úgy mondanánk ezen licencnek az alapján) épült Magyarországon 4 darab M–3.</p>
+            <p>Magyarországon 1956-ban hozták létre Varga Sándor vezetésével az MTA Kibernetikai Kutatócsoportját. A forradalom miatt a kutatócsoport valójában 1957 februárjában kezdte meg működését, de még ennek az évnek augusztusában hozzákezdett a Szovjetunióból kapott tervdokumentáció alapján az első magyar gyártású számítógép építéséhez. A számítógép kizárólag magyar gyártmányú, a Tungsram által gyártott világszínvonalú szubminiatűr elektroncsövekből épült. Egyedi magyar fejlesztés volt a memóriát helyettesítő mágnesdob is.</p>
+            <p>Az MTA KKCs-ben már a gép építésének a megindulásakor megalakult a matematikai és a közgazdasági osztály, az előbbi Sándor Ferenc, az utóbbi dr Aczél István vezetésével. Ennek a két osztálynak volt köszönhető, hogy mire a gép elkészült, már számos matematikai és gazdasági program is készen állt, így a számítógép azonnal hasznos munkára volt fogható. A matematikai osztályon az indulástól kezdve dolgoztak - többek között: Márkus Emília, Szelezsán János, Veidinger László, a közgazdasági osztályon: Krekó Béla, Ganzer Sándor és Jándy Géza.</p>
+            <p>Az első magyar M–3 az MTA Számítástechnikai Központjában 1960 és 1965 között működött üzemszerűen. 1965-ben a szegedi József Attila Tudományegyetemre szállították, ahol 1968. január 2-ig működött.</p>
+            <hr>
+        </article>
+        <h2>Most is élő tevezői/fejlesztői</h2>
+        <article class="kepsor">
+            <img src="kep/Domolki-Baint-fenykepe-r-1-150x150.jpg" alt="Dömölki Bálint" class="kepek">
+            <figcaption>Dömölki Bálint, fejlesztés vezető</figcaption>
+            <img src="kep/szelezsan_janos-150x150.jpg" alt="Szelezsán János" class="kepek">
+            <figcaption>Szelezsán János, fejlesztő</figcaption>
+            <img src="kep/Boka-Andras-fenykepe-r-2.jpg" alt="Bóka András" class="kepek">
+            <figcaption>Bóka András, fejlesztő</figcaption>
+            <img src="kep/Kardos-Kalman-fenykepe-150x150.jpg" alt="Kardos Kálmán" class="kepek">
+            <figcaption>Kardos Kálmán, fejlesztő</figcaption>
+            <img src="kep/Drasny-Jozsef-fenykepe-r-150x150.jpg" alt="Drasny József" class="kepek">
+            <figcaption>Drasny József, fejlesztő</figcaption>
+        </article>
+
+        
+        <article>
+            <hr>
+            <h2>Jelentkezési lap</h2>
+            <label for="">Jegy ára: 1500</label>
+            <form name="informatikanap">
+            <label for="szuletes">Mikor született?</label>
+            <input type="date" id="szuletes" name="szuletes" min="1900-01-01" max="2007-01-21">
+            <br>
+            <label for="jegyek">Hány darab jegyet szeretne? (1-30)</label>
+            <input id="jegyek" min="1" max="30" type="number">
+            <br>
+            <button onclick="szamolasok()" type="button">Számolj</button>
+            <h2 id="osszegki"></h2>
+            </form>
+        </article>
+    </main>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

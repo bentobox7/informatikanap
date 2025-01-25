@@ -1,0 +1,44 @@
+body {
+    background-image: url(kep/29155842-dark-blue-technology-background-1882531.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    font-size: large;
+}
+
+p {
+    text-indent: 20px;
+}
+
+.kepek{
+    width: 20%;
+    border-radius: 50%;
+
+}
+
+.keret {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: darkblue;
+    border-radius: 20px;
+    opacity: calc(0.8);
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+.kepsor {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+@media (max-width: 1900px) {
+    .kepsor {
+      flex-direction: column;
+    }
+  }
